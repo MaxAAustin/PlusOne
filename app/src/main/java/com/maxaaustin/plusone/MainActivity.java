@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent map = new Intent(MainActivity.this, GuestMap.class);
                 startActivity(map);
+
+                Intent host = new android.content.Intent(MainActivity.this, HostMain.class);
             }
         });
     }

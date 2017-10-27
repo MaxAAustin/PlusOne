@@ -42,6 +42,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.maxaaustin.plusone.MainActivity"/>
         </activity>
+        <activity android:name=".HostMain">
+        </activity>
     </application>
 
 </manifest>
