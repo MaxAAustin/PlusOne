@@ -1,5 +1,6 @@
 package com.maxaaustin.plusone;
 
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -13,6 +14,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class GuestMap extends FragmentActivity implements OnMapReadyCallback {
 
+    private final int LOCATION_REQUEST_CODE = 1;
+
     private GoogleMap mMap;
 
     @Override
@@ -23,6 +26,23 @@ public class GuestMap extends FragmentActivity implements OnMapReadyCallback {
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+    }
+
+    private void enableCurrentLocation(){
+        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != android.content.pm.PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != android.content.pm.PackageManager.PERMISSION_GRANTED) {
+
+            return;
+        }else if (mMap != null){
+        mMap.setMyLocationEnabled(true);
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults){
+        if(requestCode != LOCATION_REQUEST_CODE){
+            return;
+        }
+
     }
 
 
@@ -43,17 +63,6 @@ public class GuestMap extends FragmentActivity implements OnMapReadyCallback {
         LatLng wvu = new LatLng(39.634874, -79.953696);
         mMap.addMarker(new MarkerOptions().position(wvu).title("Mountain Lair"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(wvu, 18));
-        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != android.content.pm.PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != android.content.pm.PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
-        }
-        mMap.setMyLocationEnabled(true);
-
+        enableCurrentLocation();
     }
 }
