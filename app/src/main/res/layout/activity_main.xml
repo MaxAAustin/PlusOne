@@ -12,25 +12,28 @@
         android:id="@+id/frameLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="parent"
+        android:layout_centerHorizontal="true"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@color/colorAccent"/>
+
     </FrameLayout>
 
-    <EditText
+    <TextView
         android:id="@+id/nameText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
+        style="@style/ProfileNameText"
+        android:text="@string/username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profilePicture"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
         />
 
     <LinearLayout
@@ -38,46 +41,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:layout_marginRight="16dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent">
 
         <Button
             android:id="@+id/buttonTwo"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_alignBottom="@+id/buttonOne"
-            android:layout_alignTop="@+id/buttonOne"
-            android:layout_toEndOf="@+id/nameText"
+            style="@style/SplashButtons"
             android:layout_weight="1"
-            android:text="Host"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="302dp"
+            android:text="@string/hostButton"
             />
 
         <Button
             android:id="@+id/buttonOne"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
+            style="@style/SplashButtons"
             android:layout_weight="1"
-            android:text="Map 1"
-            tools:layout_editor_absoluteX="233dp"
-            tools:layout_editor_absoluteY="302dp"/>
+            android:text="@string/guestButton"
+            />
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/profilePicture"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_below="@+id/nameText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@color/colorAccent"/>
+
 
 </android.support.constraint.ConstraintLayout>

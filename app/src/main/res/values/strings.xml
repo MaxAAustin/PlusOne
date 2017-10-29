@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">PlusOne</string>
     <string name="title_activity_guest_map">Map</string>
+
+    <!--SPLASH SCREEN STRINGS-->
+    <string name="username">Annie User</string>
+    <string name="hostButton">Host</string>
+    <string name="guestButton">Guest</string>
+    <!--SPLASH SCREEN STRINGS-->
 </resources>
