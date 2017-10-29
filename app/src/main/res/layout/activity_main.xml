@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -49,17 +50,14 @@
             android:id="@+id/buttonTwo"
             style="@style/SplashButtons"
             android:layout_weight="1"
-            android:text="@string/hostButton"
-            />
+            android:text="@string/hostButton"/>
 
         <Button
             android:id="@+id/buttonOne"
             style="@style/SplashButtons"
             android:layout_weight="1"
-            android:text="@string/guestButton"
-            />
+            android:text="@string/guestButton"/>
     </LinearLayout>
-
 
 
 </android.support.constraint.ConstraintLayout>
