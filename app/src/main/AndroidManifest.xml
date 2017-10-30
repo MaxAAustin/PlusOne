@@ -44,6 +44,8 @@
         </activity>
         <activity android:name=".HostMain">
         </activity>
+        <activity android:name=".CuisineGrid">
+        </activity>
     </application>
 
 </manifest>
