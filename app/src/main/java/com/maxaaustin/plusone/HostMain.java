@@ -20,7 +20,7 @@ public class HostMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_host_main);
 
-        mHostDetail = (Button) findViewById(R.id.hostDetailID);
+        mHostDetail = findViewById(com.maxaaustin.plusone.R.id.hostDetailID);
         mHostDetail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

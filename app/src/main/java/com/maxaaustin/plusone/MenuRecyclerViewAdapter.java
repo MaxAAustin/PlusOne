@@ -65,8 +65,8 @@ public class MenuRecyclerViewAdapter extends RecyclerView.Adapter<MenuRecyclerVi
         public ViewHolder(View view) {
             super(view);
             mView = view;
-            mIdView = (TextView) view.findViewById(R.id.id);
-            mContentView = (TextView) view.findViewById(R.id.content);
+            mIdView = view.findViewById(com.maxaaustin.plusone.R.id.id);
+            mContentView = view.findViewById(com.maxaaustin.plusone.R.id.content);
         }
 
         @Override

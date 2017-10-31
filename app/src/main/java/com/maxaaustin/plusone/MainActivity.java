@@ -11,16 +11,6 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    RecyclerView mRecyclerView;
-    GridLayoutManager mGridLayoutManager;
-
-    String[] nameList = {
-            "American", "Barbecue", "Chinese", "French", "Indian", "Italian", "Japanese", "Mediterranean"
-    };
-    int[] cuisineIconID = {
-            R.drawable.american, R.drawable.bbq, R.drawable.chinese, R.drawable.french, R.drawable.indian, R.drawable.italian, R.drawable.japanese3, R.drawable.mediterranean
-    };
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent host = new Intent(getApplicationContext(), HostMain.class);
+                Intent host = new Intent(context, com.maxaaustin.plusone.CuisineRecyclerActivity.class);
                 startActivity(host);
             }
         });
