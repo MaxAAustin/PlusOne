@@ -19,5 +19,9 @@
     <!--VEGAN RECIPE STRINGS-->
     <string name="descriptionOne">Here\'s a quick vegetarian version of the Brazilian national dish known as feijoada. This stew entices the eye with the colorful contrast of black beans and sweet potatoes and pleases the palate with nourishing ingredients.</string>
     <string name="titleOne">Vegan Title</string>
+    <string name="connect_fb">connect Facebook</string>
+    <string name="connect_google">connect Google</string>
+    <string name="connect_twitter">connect Twitter</string>
+    <string name="connect_ig">connect Instagram</string>
     <!--VEGAN RECIPE STRINGS-->
 </resources>

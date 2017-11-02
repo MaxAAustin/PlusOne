@@ -18,6 +18,17 @@ android {
     }
 }
 
+android.defaultConfig.manifestPlaceholders = [
+        facebookAppId        : "189953571452011",
+        googleWebClientId    : "775503623453-sqk59kuvr2f8qkb9fkcnhef5uvn9riu4.apps.googleusercontent.com",
+        twitterConsumerKey   : "r59jTevJfWg6YDGldRGiks8Rl",
+        twitterConsumerSecret: "MQAQtngew0imjGduM3mEbWE1fdUbGOekYEcvm0ybCoJy5FUrju",
+        instagramClientId    : "76bedc2d27dd4e52841e576d4ce8cc79",
+        instagramClientSecret: "28d91eb23ab440beb55b3a3f112f4bb2",
+        instagramRedirectUri : "https://localhost/oauth2redirect"
+]
+
+
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.1.0'
@@ -29,4 +40,10 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation 'com.android.support:design:26.1.0'
     implementation 'com.android.support:cardview-v7:26.1.0'
+    compile 'com.github.jaychang0917:SimpleAuth:1.0.5'
+    compile 'com.github.jaychang0917:SimpleAuth:1.0.5'
+    compile 'com.jakewharton:butterknife:8.7.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
 }
