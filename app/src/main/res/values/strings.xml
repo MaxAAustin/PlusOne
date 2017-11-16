@@ -23,5 +23,29 @@
     <string name="connect_google">connect Google</string>
     <string name="connect_twitter">connect Twitter</string>
     <string name="connect_ig">connect Instagram</string>
+    <string name="title_activity_map_nav">MapNav</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
     <!--VEGAN RECIPE STRINGS-->
+
+    <!--Map Nav Drawer Section Titles-->
+    <string name="head1">Home</string>
+    <string name="head2">Us</string>
+    <string name="head3">You</string>
+    <!--Map Nav Drawer Section Titles-->
+
+    <!--Map Nav Drawer Item Titles-->
+    <string name="t1">Cuisines</string>
+    <string name="t2">Favorites</string>
+    <string name="t3">Featured</string>
+    <string name="t4">Search</string>
+    <string name="t5">About Us</string>
+    <string name="t6">Terms and Conditions</string>
+    <string name="t7">Settings</string>
+    <string name="t8">Profile</string>
+    <string name="t9">My Events</string>
+    <!--Map Nav Drawer Item Titles-->
 </resources>

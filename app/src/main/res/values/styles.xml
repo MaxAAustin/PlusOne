@@ -17,6 +17,7 @@
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:textAlignment">center</item>
     </style>
+
     <style name="SplashButtons" parent="android:Widget.Button">
 
         <item name="android:layout_width">150dp</item>
@@ -26,7 +27,7 @@
     </style>
 
     <!--SPLASH SCREEN STYLES-->
-    
+
     <!--HOST MAIN STYLES-->
     <style name="BorderlessHostButtons" parent="android:Widget.Material.Button.Borderless">
         <item name="android:layout_height">100dp</item>
@@ -34,6 +35,10 @@
         <item name="android:layout_gravity">center_horizontal</item>
 
     </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
     <!--HOST MAIN STYLES-->
 
