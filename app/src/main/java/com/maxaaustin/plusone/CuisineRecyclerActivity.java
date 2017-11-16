@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.RecyclerView.ViewHolder;
+import android.view.View;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -24,6 +25,9 @@ public class CuisineRecyclerActivity extends AppCompatActivity {
         mLayoutManager = new GridLayoutManager(this, 3);
 
         mRecyclerView.setHasFixedSize(true);
+        mRecyclerView.setItemViewCacheSize(10);
+        mRecyclerView.setDrawingCacheEnabled(true);
+        mRecyclerView.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_LOW);
 
         mRecyclerView.setLayoutManager(mLayoutManager);
         mAdapter = new CuisineAdapter(this);
