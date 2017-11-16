@@ -5,33 +5,50 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/cuisine_navdrw"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Import"/>
+            android:title="@string/t1"/>
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/favorites"
+            android:icon="@drawable/heart"
+            android:title="@string/t2"/>
+        <item
+            android:id="@+id/featured"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery"/>
+            android:title="@string/t3"/>
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow"/>
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools"/>
+            android:id="@+id/search"
+            android:icon="?android:attr/actionModeWebSearchDrawable"
+            android:title="@string/t4"/>
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="@string/head2">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share"/>
+                android:id="@+id/about_us"
+                android:icon="@android:drawable/ic_menu_info_details"
+                android:title="@string/t5"/>
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send"/>
+                android:id="@+id/terms"
+                android:icon="@android:drawable/ic_menu_sort_by_size"
+                android:title="@string/t6"/>
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/t7"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/head3">
+        <menu>
+            <item
+                android:id="@+id/profile"
+                android:icon="@android:drawable/ic_menu_myplaces"
+                android:title="@string/t8"/>
+            <item
+                android:id="@+id/my_events"
+                android:icon="@android:drawable/ic_input_get"
+                android:title="@string/t9"/>
         </menu>
     </item>
 

@@ -16,6 +16,12 @@ public class GuestMap extends FragmentActivity implements OnMapReadyCallback {
 
     private final int LOCATION_REQUEST_CODE = 1;
 
+    private final LatLng markMSB = new LatLng(39.627459, -79.961238);
+    private final LatLng markCA = new LatLng(39.646834, -79.977523);
+    private final LatLng markAER = new LatLng(39.646001, -79.971380);
+    private final LatLng markCP = new LatLng(39.648296, -79.980465);
+
+
     private GoogleMap mMap;
 
     @Override
@@ -58,10 +64,13 @@ public class GuestMap extends FragmentActivity implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
-        // Add a marker in Sydney and move the camera
+        //adds markers at several Morgantown locations
         LatLng wvu = new LatLng(39.634874, -79.953696);
         mMap.addMarker(new MarkerOptions().position(wvu).title("Mountain Lair"));
+        mMap.addMarker(new MarkerOptions().position(markAER).title("Advanced Engin. Research"));
+        mMap.addMarker(new MarkerOptions().position(markMSB).title("Mountain State Brewery"));
+        mMap.addMarker(new MarkerOptions().position(markCA).title("Core Arboretum"));
+        mMap.addMarker(new MarkerOptions().position(markCP).title("Coliseum Tailgate"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(wvu, 18));
         enableCurrentLocation();
     }

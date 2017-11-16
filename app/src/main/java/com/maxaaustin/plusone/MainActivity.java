@@ -59,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
         Picasso.with(this).load(url).into(mUserImageView);
         addListenerGuest();
         addListenerHost();
-
     }
 
     public void addListenerGuest(){
@@ -69,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent map = new Intent(context, GuestMap.class);
+                Intent map = new Intent(context, MapNav.class);
                 startActivity(map);
             }
         });

@@ -53,8 +53,13 @@
                 android:value="com.maxaaustin.plusone.MainActivity"/>
         </activity>
         <activity android:name=".HostMain">
+
         </activity>
-        <activity android:name=".CuisineRecyclerActivity">
+        <activity android:name=".CuisineRecyclerActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.maxaaustin.plusone.MainActivity"/>
         </activity>
         <activity
             android:name=".MapNav"
